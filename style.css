@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    max-width: 150px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #7f8c8d;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.timer {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 30px;
+    padding: 10px;
+    background: #fdf0ed;
+    border-radius: 5px;
+}
+
+#time {
+    font-size: 32px;
+}
+
+.question-number {
+    font-size: 18px;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.question-text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+.options {
+    margin-bottom: 30px;
+}
+
+.option {
+    display: block;
+    background: #ecf0f1;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.option:hover {
+    background: #d5dbdb;
+}
+
+.option.selected {
+    background: #3498db;
+    color: white;
+}
+
+.option input {
+    margin-right: 10px;
+    transform: scale(1.2);
+    vertical-align: middle;
+}
+
+.option strong {
+    margin-right: 5px;
+    color: #2c3e50;
+}
+
+.option.selected strong {
+    color: white;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+button {
+    padding: 12px 25px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover:not(:disabled) {
+    background: #2980b9;
+}
+
+button:disabled {
+    background: #bdc3c7;
+    cursor: not-allowed;
+}
+
+#result-container {
+    text-align: center;
+}
+
+#result-container h2 {
+    color: #27ae60;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#score {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#download-pdf {
+    margin-top: 30px;
+    background: #27ae60;
+    font-size: 18px;
+}
+
+#download-pdf:hover {
+    background: #229954;
+}

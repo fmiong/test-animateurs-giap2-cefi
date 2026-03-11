@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Animateurs GIAP II - CEFI</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bibliothèque jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- Si vous avez un logo, décommentez la ligne suivante et placez le fichier logo_cefi_ong.png dans le même dossier -->
+            <!-- <img src="logo_cefi_ong.png" alt="Logo CEFI" class="logo"> -->
+            <h1>Test de sélection des animateurs terrain</h1>
+            <h2>Projet GIAP II – CEFI / Chefferie de BANGENGELE</h2>
+        </header>
+
+        <div id="timer" class="timer">Temps restant : <span id="time">20:00</span></div>
+
+        <div id="quiz-container">
+            <div id="question-number" class="question-number"></div>
+            <div id="question-text" class="question-text"></div>
+            <div id="options" class="options"></div>
+            <div class="navigation">
+                <button id="prev-btn" disabled>Précédent</button>
+                <button id="next-btn">Suivant</button>
+                <button id="submit-btn" style="display: none;">Terminer</button>
+            </div>
+        </div>
+
+        <div id="result-container" style="display: none;">
+            <h2>Test terminé !</h2>
+            <p>Votre score : <span id="score"></span> / 20</p>
+            <button id="download-pdf">Télécharger le récapitulatif PDF</button>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
